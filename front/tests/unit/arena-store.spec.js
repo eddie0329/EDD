@@ -14,7 +14,7 @@ describe("arena store test", () => {
   });
 
   describe("mutations test", () => {
-    const { SET_GAME_LIST } = mutations;
+    const { SET_GAME_LIST, SET_LOAD_STATE } = mutations;
     let mockState;
     beforeEach(() => {
       mockState = getDefaultState();
@@ -27,6 +27,13 @@ describe("arena store test", () => {
       expect(mockState.gameList)
         .toMatchObject(mockGameList)
         .toBeTyped("object");
+    });
+    it("SET_LOAD_STATE test", () => {
+      const mockLoadState = "LOADING";
+      SET_LOAD_STATE(mockState, mockLoadState);
+      expect(mockState.loadState)
+        .toEqual(mockLoadState)
+        .toBeTyped("string");
     });
   });
 });
