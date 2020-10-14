@@ -64,7 +64,12 @@
     "parserOptions": {
       "parser": "babel-eslint"
     },
-    "rules": {},
+    "rules": {
+      "comma-dangle": "off",
+      "comma-spacing": "off",
+      "comma-style": "off",
+      "no-trailing-spaces": "off"
+    },
     "overrides": [
       {
         "files": [

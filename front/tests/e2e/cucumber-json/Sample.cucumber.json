@@ -22,7 +22,7 @@
             "name": "on the main page",
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 176000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "sample displays \"HELLO\"",
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 25000000
             }
           }
         ]
