@@ -1,0 +1,42 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Sample",
+    "line": 1,
+    "id": "sample",
+    "tags": [],
+    "uri": "Sample.feature",
+    "elements": [
+      {
+        "id": "sample;sample",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "Sample",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "on the main page",
+            "result": {
+              "status": "passed",
+              "duration": 73000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 4,
+            "name": "sample displays \"HELLO\"",
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
