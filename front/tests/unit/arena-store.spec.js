@@ -1,8 +1,15 @@
 import createArenaStore, {
   getDefaultState,
+  SET_GAME_LIST,
 } from "../../src/store/modules/arena-create";
+import arenaService from "../../src/api/arena-service";
 
-const { state, mutations } = createArenaStore();
+jest.mock("../../src/api/arena-service", () => ({
+  __esModule__: true,
+  getGameList: jest.fn(),
+}));
+
+const { state, mutations, actions } = createArenaStore({ arenaService });
 
 describe("arena store test", () => {
   describe("state test", () => {
@@ -34,6 +41,23 @@ describe("arena store test", () => {
       expect(mockState.loadState)
         .toEqual(mockLoadState)
         .toBeTyped("string");
+    });
+  });
+
+  describe("actions test", () => {
+    const { GET_GAME_LIST } = actions;
+    let commit;
+    beforeEach(() => {
+      commit = jest.fn();
+    });
+
+    it("GET_GAME_LIST TEST", async () => {
+      const mockGameList = [{ id: 1, mainTitle: "HELLO", subTitle: "HI" }];
+      arenaService.getGameList.mockResolvedValue({
+        data: { gameList: mockGameList },
+      });
+      await GET_GAME_LIST({ commit });
+      expect(commit).toHaveBeenCalledWith(SET_GAME_LIST, mockGameList);
     });
   });
 });

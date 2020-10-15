@@ -1,0 +1,162 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "Game Card List",
+    "line": 1,
+    "id": "game-card-list",
+    "tags": [],
+    "uri": "GameCards.feature",
+    "elements": [
+      {
+        "id": "game-card-list;game-card-list-display",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Game Card List Display",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "located on the main page",
+            "result": {
+              "status": "passed",
+              "duration": 157000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "total 8 game cards should be displayed.",
+            "result": {
+              "status": "passed",
+              "duration": 75000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "main-title"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "APEX"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Audition"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Brawl Stars"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "CS:GO"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Cyphers"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "DUNGEON & FIGHTER"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "For Honors"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Hearth Stone"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 7,
+            "name": "following 8 card lists should contain main title as:",
+            "result": {
+              "status": "passed",
+              "duration": 62000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "sub-title"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "에이팩스"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "오디션"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "브롤 스타즈"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "카운터 스트라이크"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "사이퍼즈"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "던전 앤 파이터"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "포 아너"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "하스스톤"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 17,
+            "name": "follow 8 cards lists should contain sub title as:",
+            "result": {
+              "status": "passed",
+              "duration": 83000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

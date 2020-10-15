@@ -3,9 +3,9 @@
     v-if="loadState === 'LOADING'"
     class="arena-loading-card-container"
   ></div>
-  <div v-else class="arena-card-container" @click="onClickCard">
-    <div class="main-title">{{ mainTitle }}</div>
-    <div class="sub-title">{{ subTitle }}</div>
+  <div v-else class="arena-card-container" @click="onClickCard" data-test-game-card>
+    <div class="main-title" data-test-main-title>{{ mainTitle }}</div>
+    <div class="sub-title" data-test-sub-title>{{ subTitle }}</div>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 import { storiesOf } from "@storybook/vue";
-import ArenaCard from "../components/ArenaCard";
+import GameCard from "../components/GameCard";
 
-storiesOf("ArenaCard", module)
+storiesOf("GameCard", module)
   .add("Tekken 7 Card", () => ({
     data: () => ({
       mainTitle: "TEKKEN 7",
@@ -9,7 +9,7 @@ storiesOf("ArenaCard", module)
       loadState: "LOADED",
     }),
     components: {
-      ArenaCard,
+      GameCard,
     },
     methods: {
       onClickCard() {
@@ -18,18 +18,18 @@ storiesOf("ArenaCard", module)
     },
     template: `
   <div>
-    <ArenaCard :main-title="mainTitle" :sub-title="subTitle" @click="onClickCard" :load-state="loadState"/>
+    <GameCard :main-title="mainTitle" :sub-title="subTitle" @click="onClickCard" :load-state="loadState"/>
   </div>
   `,
   }))
   .add("Tekken 7 card loading", () => ({
     data: () => ({}),
     components: {
-      ArenaCard,
+      GameCard,
     },
     template: `
   <div>
-    <ArenaCard />
+    <GameCard />
   </div>
   `,
   }));
