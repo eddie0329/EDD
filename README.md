@@ -19,8 +19,16 @@ npm run start
 # START FRONT
 cd front
 npm install
-npm run serve // start front project
-npm run storybook // storybook
-npm run test:unit:watch // unit test
-npm run test:e2e // cypress
+
+# FRONT PROJECT
+npm run serve 
+
+# STORYBOOK
+npm run storybook
+
+# UNIT TEST
+npm run test:unit:watch
+
+# CYPRESS
+npm run test:e2e
 ```
