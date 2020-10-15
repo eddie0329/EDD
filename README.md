@@ -9,7 +9,7 @@ EFD use pros of 4 development techniques such as ,CDD, TDD, SDD and BDD.
 ## Start
 
 ```bash
-cd EDD
+cd EFD
 
 # START SERVER
 cd back
