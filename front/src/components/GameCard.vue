@@ -23,11 +23,16 @@ export default {
     loadState: {
       type: String,
       default: "LOADING"
+    },
+    isDarkMode: {
+      type: Boolean,
+      default: false,
     }
   },
   methods: {
     onClickCard() {
       this.$emit("click");
+      console.log(this.isDarkMode);
     }
   }
 };

@@ -22,6 +22,8 @@
     "@storybook/addon-knobs": "^6.0.26",
     "@storybook/addon-links": "^6.0.26",
     "@storybook/addon-notes": "^5.3.21",
+    "@storybook/addons": "^6.0.26",
+    "@storybook/theming": "^6.0.26",
     "@storybook/vue": "^6.0.26",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-e2e-cypress": "~4.5.0",
@@ -39,6 +41,7 @@
     "jest-chain": "^1.1.5",
     "jest-to-be-typed": "^1.1.0",
     "prettier": "^1.19.1",
+    "storybook-dark-mode": "^1.0.3",
     "vue-template-compiler": "^2.6.11"
   },
   "cypress-cucumber-preprocessor": {

@@ -1,5 +1,6 @@
 import { storiesOf } from "@storybook/vue";
 import GameCard from "../components/GameCard";
+import DarkModeWrapper from "./DarkModeWrapper";
 
 storiesOf("GameCard", module)
   .add("Tekken 7 Card", () => ({
@@ -10,6 +11,7 @@ storiesOf("GameCard", module)
     }),
     components: {
       GameCard,
+      DarkModeWrapper,
     },
     methods: {
       onClickCard() {
@@ -18,7 +20,9 @@ storiesOf("GameCard", module)
     },
     template: `
   <div>
-    <GameCard :main-title="mainTitle" :sub-title="subTitle" @click="onClickCard" :load-state="loadState"/>
+    <DarkModeWrapper v-slot="{isDarkMode}">
+      <GameCard :main-title="mainTitle" :sub-title="subTitle" @click="onClickCard" :load-state="loadState" :is-dark-mode="isDarkMode"/>
+    </DarkModeWrapper>
   </div>
   `,
   }))
