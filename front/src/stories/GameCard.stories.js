@@ -9,6 +9,15 @@ storiesOf("GameCard", module)
       subTitle: "철권 7",
       loadState: "LOADED",
     }),
+    props: {
+      value: {
+        type: String,
+        default: "",
+      },
+    },
+    created() {
+      console.log("value", this.value);
+    },
     components: {
       GameCard,
       DarkModeWrapper,
