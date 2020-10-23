@@ -12,16 +12,16 @@ export default {
       default: "default"
     }
   },
-  data: () => ({
-    badge: {
-      default: "default-hollow-badge",
-      gray: "gray-hollow-badge",
-      purple: "purple-hollow-badge"
-    }
-  }),
   computed: {
     getHollowBadgeType() {
       return this.badge[this.badgeType];
+    },
+    badge() {
+      return {
+        default: "default-hollow-badge",
+        gray: "gray-hollow-badge",
+        purple: "purple-hollow-badge"
+      };
     }
   }
 };
